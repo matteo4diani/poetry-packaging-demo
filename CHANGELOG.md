@@ -2,6 +2,17 @@
 
 
 
+## v0.1.8 (2023-08-12)
+
+### Fix
+
+* fix(ci): add verbose flag ([`60d2f2c`](https://github.com/matteo4diani/poetry-packaging-demo/commit/60d2f2cd2fd3359a7bdf416cb045a42c7d7ce1d7))
+
+### Unknown
+
+* Merge branch &#39;main&#39; of https://github.com/matteo4diani/poetry-packaging-demo ([`dcad817`](https://github.com/matteo4diani/poetry-packaging-demo/commit/dcad817b7cf875a9267539708abc784afed3145b))
+
+
 ## v0.1.7 (2023-08-12)
 
 ### Fix
