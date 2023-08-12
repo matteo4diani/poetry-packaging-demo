@@ -2,6 +2,17 @@
 
 
 
+## v0.1.13 (2023-08-12)
+
+### Fix
+
+* fix(ci): fix ([`8fecfa4`](https://github.com/matteo4diani/poetry-packaging-demo/commit/8fecfa45f0d8184e22f5e35357dae7aed034dac2))
+
+### Unknown
+
+* Merge branch &#39;main&#39; of https://github.com/matteo4diani/poetry-packaging-demo ([`bf3dcdf`](https://github.com/matteo4diani/poetry-packaging-demo/commit/bf3dcdf9d6f9e3c53e6ad8769f6444aa673e74c9))
+
+
 ## v0.1.12 (2023-08-12)
 
 ### Fix
