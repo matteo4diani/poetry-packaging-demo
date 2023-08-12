@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "poetry-packaging-demo"
-version = "0.1.0"
+version = "0.0.1"
 description = "A demo of a Python packaging workflow using GH Actions and poetry"
 authors = ["Matteo Fordiani <matteofordiani@gmail.com>"]
 readme = "README.md"
@@ -9,6 +9,16 @@ packages = [{include = "poetry_packaging_demo"}]
 [tool.poetry.dependencies]
 python = "^3.8"
 numpy = "^1.24"
+
+[tool.semantic_release]
+version_variable = [
+    "src_folder/__init__.py:__version__",
+    "pyproject.toml:version"
+]
+branch = "main"
+upload_to_pypi = false
+upload_to_release = true
+build_command = "pip install poetry && poetry build"
 
 
 [build-system]

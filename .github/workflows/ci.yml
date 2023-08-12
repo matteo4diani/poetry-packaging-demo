@@ -1,29 +1,51 @@
 name: CI
-on:   
-    pull_request:
-        branches:
-        - '**'
-    push:
-        branches:  
-        - main
-        - master
-        
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+
 jobs:
-  test:
+  Quality:
     runs-on: ubuntu-latest
     strategy:
-        fail-fast: false
+        fail-fast: true
         matrix:
           python-version: ["3.8", "3.9", "3.10"]
-  
+
     steps:
-      - uses: actions/checkout@v3
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v3
+      with:
+        python-version: 3.8
+    - name: Install Python Poetry
+      uses: abatilo/actions-poetry@v2.3.0
+    - name: Configure poetry
+      shell: bash
+      run: python -m poetry config virtualenvs.in-project true
+    - name: View poetry version
+      run: poetry --version
+    - name: Install dependencies
+      run: |
+        python -m poetry install
+    - name: Test
+      run: poetry run python3 -m unittest discover
+    
+  Release:
+    needs: Quality
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && !contains(github.event.head_commit.message, 'chore(release):')
+    runs-on: ubuntu-latest
+
+    steps:
       - uses: actions/setup-python@v3
         with:
-            python-version: ${{ matrix.python-version }}
-      - name: Install and configure Poetry
-        uses: snok/install-poetry@v1
-      - name: Install venv
-        run: poetry install
-      - name: Test
-        run: poetry run python3 -m unittest discover
+          python-version: 3.8
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Semantic Release
+        run: |
+          pip install python-semantic-release
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          semantic-release publish
