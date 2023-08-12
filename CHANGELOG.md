@@ -2,6 +2,19 @@
 
 
 
+## v0.1.7 (2023-08-12)
+
+### Fix
+
+* fix(ci): fix ci ([`3459046`](https://github.com/matteo4diani/poetry-packaging-demo/commit/3459046a3b1f8a3fe0577f5e9d551352fc8d5f23))
+
+* fix(ci): fix ci ([`c4dfbc3`](https://github.com/matteo4diani/poetry-packaging-demo/commit/c4dfbc37ca09224d2c0c712370f78168f10ce1d4))
+
+### Unknown
+
+* Merge branch &#39;main&#39; of https://github.com/matteo4diani/poetry-packaging-demo ([`57e1c2a`](https://github.com/matteo4diani/poetry-packaging-demo/commit/57e1c2a0a547c19609672bb8fc1c7a7114d70097))
+
+
 ## v0.1.6 (2023-08-12)
 
 ### Fix
