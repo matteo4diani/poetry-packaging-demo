@@ -55,5 +55,7 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           semantic-release version
+          cat pyproject.toml
+          cat poetry_packaging_demo/__init__.py
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
