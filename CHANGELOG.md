@@ -2,6 +2,33 @@
 
 
 
+## v1.0.0 (2023-08-12)
+
+### Breaking
+
+* feat!: test major on zero ([`8aca300`](https://github.com/matteo4diani/poetry-packaging-demo/commit/8aca300c2ac39d540611c6e1753fcf240c62f420))
+
+### Ci
+
+* ci(release): do not execute release on chore(release), ci(*), docs(*) ([`5e0648a`](https://github.com/matteo4diani/poetry-packaging-demo/commit/5e0648a4addfdb4af60cfccdaefc3366e007b349))
+
+* ci(release): release and publish only if dist has been created ([`2088f9c`](https://github.com/matteo4diani/poetry-packaging-demo/commit/2088f9c55788428d0e034e174be2ab40961d90e2))
+
+* ci(release): graceful failing ([`296c261`](https://github.com/matteo4diani/poetry-packaging-demo/commit/296c261e373b56f3e95ed7c8a1ce8408d098407e))
+
+* ci(README): Update README.md ([`ac4b6b0`](https://github.com/matteo4diani/poetry-packaging-demo/commit/ac4b6b0bfea196be8649c8b2166241c5eebc18b2))
+
+* ci(README): Update README.md ([`de08687`](https://github.com/matteo4diani/poetry-packaging-demo/commit/de0868703919f3f99c5e58cf2685b85bb3f6d1d7))
+
+### Documentation
+
+* docs(readme): add project description and usage ([`18e8612`](https://github.com/matteo4diani/poetry-packaging-demo/commit/18e86124d77a5f5e87eec669d8481606003a89b9))
+
+### Unknown
+
+* feat!:test major on zero ([`72b7054`](https://github.com/matteo4diani/poetry-packaging-demo/commit/72b7054dd8084f747f258cadfe12eda72b25dc1c))
+
+
 ## v0.3.0 (2023-08-12)
 
 ### Feature
