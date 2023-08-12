@@ -2,6 +2,13 @@
 
 
 
+## v0.1.9 (2023-08-12)
+
+### Fix
+
+* fix(ci): publish tag ([`a86f631`](https://github.com/matteo4diani/poetry-packaging-demo/commit/a86f6315186901178bf34f75b766aaaa47e264ee))
+
+
 ## v0.1.8 (2023-08-12)
 
 ### Fix
