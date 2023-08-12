@@ -36,8 +36,6 @@ jobs:
     needs: Quality
     if: github.event_name == 'push' && github.ref == 'refs/heads/main' && !contains(github.event.head_commit.message, 'chore(release):')
     runs-on: ubuntu-latest
-    env:
-      GH_TOKEN: ${{secrets.GH_TOKEN}}
 
     steps:
       - uses: actions/setup-python@v3
@@ -45,9 +43,7 @@ jobs:
           python-version: 3.8
       - name: Checkout code
         uses: actions/checkout@v3
-      - name: Semantic Release
-        run: |
-          pip install python-semantic-release
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          semantic-release publish
+      - name: Python Semantic Release
+        uses: python-semantic-release/python-semantic-release@master
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
