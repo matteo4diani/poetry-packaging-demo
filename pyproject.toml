@@ -11,16 +11,12 @@ python = "^3.8"
 numpy = "^1.24"
 
 [tool.semantic_release]
-version_variable = [
-    "poetry_packaging_demo/__init__.py:__version__"
-]
-
 version_toml = [
-    "pyproject.toml:tool.poetry.version",
+    "pyproject.toml:tool.poetry.version"
 ]
 
 branch = "main"
-upload_to_pypi = false
+upload_to_PyPI = false
 upload_to_release = true
 build_command = "pip install poetry && poetry build"
 

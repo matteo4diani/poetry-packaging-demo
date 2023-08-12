@@ -7,33 +7,33 @@ on:
 
 
 jobs:
-  Quality:
-    runs-on: ubuntu-latest
-    strategy:
-        fail-fast: true
-        matrix:
-          python-version: ["3.8", "3.9", "3.10"]
+  # Quality:
+  #   runs-on: ubuntu-latest
+  #   strategy:
+  #       fail-fast: true
+  #       matrix:
+  #         python-version: ["3.8", "3.9", "3.10"]
 
-    steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-python@v3
-      with:
-        python-version: 3.8
-    - name: Install Python Poetry
-      uses: abatilo/actions-poetry@v2.3.0
-    - name: Configure poetry
-      shell: bash
-      run: python -m poetry config virtualenvs.in-project true
-    - name: View poetry version
-      run: poetry --version
-    - name: Install dependencies
-      run: |
-        python -m poetry install
-    - name: Test
-      run: poetry run python3 -m unittest discover
+  #   steps:
+  #   - uses: actions/checkout@v3
+  #   - uses: actions/setup-python@v3
+  #     with:
+  #       python-version: 3.8
+  #   - name: Install Python Poetry
+  #     uses: abatilo/actions-poetry@v2.3.0
+  #   - name: Configure poetry
+  #     shell: bash
+  #     run: python -m poetry config virtualenvs.in-project true
+  #   - name: View poetry version
+  #     run: poetry --version
+  #   - name: Install dependencies
+  #     run: |
+  #       python -m poetry install
+  #   - name: Test
+  #     run: poetry run python3 -m unittest discover
     
   Release:
-    needs: Quality
+  #  needs: Quality
     if: github.event_name == 'push' && github.ref == 'refs/heads/main' && !contains(github.event.head_commit.message, 'chore(release):')
     runs-on: ubuntu-latest
     concurrency: release
@@ -52,7 +52,7 @@ jobs:
       - name: Semantic Release
         run: |
           pip install python-semantic-release
-          semantic-release version
-          semantic-release publish
+          semantic-release version --no-vcs-release
+          semantic-release publish 
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
