@@ -2,6 +2,13 @@
 
 
 
+## v0.1.1 (2023-08-12)
+
+### Fix
+
+* fix(ci): revert to direct install of python-semantic-release ([`3908603`](https://github.com/matteo4diani/poetry-packaging-demo/commit/3908603dfb6a235bbbf8b91aebbc56788b2219f6))
+
+
 ## v0.1.0 (2023-08-12)
 
 ### Feature
