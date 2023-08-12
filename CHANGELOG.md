@@ -2,6 +2,13 @@
 
 
 
+## v0.1.3 (2023-08-12)
+
+### Fix
+
+* fix(ci): fix ([`f1080fc`](https://github.com/matteo4diani/poetry-packaging-demo/commit/f1080fca7b7be0cb24b1d679d3266d55c8f8a55a))
+
+
 ## v0.1.2 (2023-08-12)
 
 ### Fix
