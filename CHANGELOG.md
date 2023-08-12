@@ -2,6 +2,13 @@
 
 
 
+## v0.1.2 (2023-08-12)
+
+### Fix
+
+* fix(ci): use semantic-release version instead of publish ([`939e192`](https://github.com/matteo4diani/poetry-packaging-demo/commit/939e1926ca86b64aa08ca7bf658c0f6c66fe6869))
+
+
 ## v0.1.1 (2023-08-12)
 
 ### Fix
