@@ -2,6 +2,13 @@
 
 
 
+## v0.1.4 (2023-08-12)
+
+### Fix
+
+* fix(ci): fix toml path ([`5004849`](https://github.com/matteo4diani/poetry-packaging-demo/commit/50048492a165a11ebe8db31c34d10b697ded74b1))
+
+
 ## v0.1.3 (2023-08-12)
 
 ### Fix
