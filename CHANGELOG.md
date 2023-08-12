@@ -2,6 +2,13 @@
 
 
 
+## v0.1.12 (2023-08-12)
+
+### Fix
+
+* fix(ci): fix ([`cf1bf46`](https://github.com/matteo4diani/poetry-packaging-demo/commit/cf1bf469f4a92e9108186e49aac589fc00f07ce9))
+
+
 ## v0.1.11 (2023-08-12)
 
 ### Fix
