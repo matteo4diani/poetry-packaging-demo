@@ -52,6 +52,6 @@ jobs:
       - name: Semantic Release
         run: |
           pip install python-semantic-release
-          mv dist release && semantic-release version
+          semantic-release version
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
