@@ -2,6 +2,13 @@
 
 
 
+## v0.1.6 (2023-08-12)
+
+### Fix
+
+* fix(ci): fix token ([`0b5b919`](https://github.com/matteo4diani/poetry-packaging-demo/commit/0b5b91971b953aa15b8680bb07b8ea401e488ea6))
+
+
 ## v0.1.5 (2023-08-12)
 
 ### Fix
