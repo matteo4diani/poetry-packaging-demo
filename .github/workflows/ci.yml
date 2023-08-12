@@ -53,6 +53,6 @@ jobs:
         run: |
           pip install python-semantic-release
           semantic-release version
-          semantic-release publish --tag $TAG
+          semantic-release publish --tag $(git describe --tags)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
