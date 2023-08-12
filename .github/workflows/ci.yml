@@ -62,9 +62,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pip install python-semantic-release
-          semantic-release version
-          git fetch --tags
-          for file in ./dist/**; do gh release upload "$(git describe --abbrev=0)" $file; done
+          semantic-release version && git fetch --tags && for file in ./dist/**; do gh release upload "$(git describe --abbrev=0)" $file; done
         
       - name: Release to PyPI
         env:
