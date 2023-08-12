@@ -2,6 +2,13 @@
 
 
 
+## v0.3.0 (2023-08-12)
+
+### Feature
+
+* feat(ci): add quality assurance job ([`94e4846`](https://github.com/matteo4diani/poetry-packaging-demo/commit/94e4846311aa90e3eb948889aad857c8b2953ecf))
+
+
 ## v0.2.0 (2023-08-12)
 
 ### Feature
