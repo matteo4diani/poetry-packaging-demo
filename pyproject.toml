@@ -19,8 +19,6 @@ branch = "main"
 upload_to_PyPI = false
 upload_to_release = true
 build_command = "pip install poetry && poetry build"
-assets = ['dist/**.whl', 'dist/**.tar.gz']
-
 
 [build-system]
 requires = ["poetry-core"]
