@@ -18,8 +18,8 @@ version_toml = [
 branch = "main"
 upload_to_PyPI = false
 upload_to_release = true
-build_command = "pip install poetry && poetry build && git add -f dist"
-assets = ['dist']
+build_command = "pip install poetry && poetry build && mv dist release"
+assets = ['release']
 
 
 [build-system]
