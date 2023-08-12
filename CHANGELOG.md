@@ -2,6 +2,17 @@
 
 
 
+## v0.1.11 (2023-08-12)
+
+### Fix
+
+* fix(ci): fix ([`4ff5e89`](https://github.com/matteo4diani/poetry-packaging-demo/commit/4ff5e894acec2bebca6e9b32d70e53b6472911c8))
+
+* fix(ci): fix ([`1deb70a`](https://github.com/matteo4diani/poetry-packaging-demo/commit/1deb70ae8045be855eac4dc1638294892fc1385f))
+
+* fix(ci): fix ([`b09daa6`](https://github.com/matteo4diani/poetry-packaging-demo/commit/b09daa621e4bba4a742d2ef3389df9324390f7ea))
+
+
 ## v0.1.10 (2023-08-12)
 
 ### Fix
