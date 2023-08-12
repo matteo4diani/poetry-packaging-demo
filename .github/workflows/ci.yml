@@ -41,7 +41,12 @@ jobs:
     
   Release:
     needs: Quality
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && !contains(github.event.head_commit.message, 'chore(release):')
+    if: |
+      github.event_name == 'push' && 
+      github.ref == 'refs/heads/main' && 
+      !contains ( github.event.head_commit.message, 'chore(release)' ) && 
+      !startsWith ( github.event.head_commit.message, 'ci(' ) &&
+      !startsWith ( github.event.head_commit.message, 'docs(' )
     runs-on: ubuntu-latest
     concurrency: release
     permissions:
@@ -64,11 +69,11 @@ jobs:
           pip install python-semantic-release
           semantic-release version
           git fetch --tags
-          [ -d dist ] && for file in ./dist/**; do gh release upload "$(git describe --abbrev=0)" $file; done
+          for file in ./dist/**; do gh release upload "$(git describe --abbrev=0)" $file; done
         
       - name: Release to PyPI
         env:
           PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
         run: |
           poetry config pypi-token.pypi $PYPI_TOKEN
-          [ -d dist ] && poetry publish
+          poetry publish
