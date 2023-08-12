@@ -2,6 +2,13 @@
 
 
 
+## v0.2.0 (2023-08-12)
+
+### Feature
+
+* feat(ci): add dist to GH release and publish to PyPI ([`a9f6c0b`](https://github.com/matteo4diani/poetry-packaging-demo/commit/a9f6c0bde814bdca1be5a1a848772b0beec8ea10))
+
+
 ## v0.1.19 (2023-08-12)
 
 ### Fix
