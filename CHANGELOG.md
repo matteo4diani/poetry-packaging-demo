@@ -2,6 +2,13 @@
 
 
 
+## v0.1.18 (2023-08-12)
+
+### Fix
+
+* fix(ci): add dist during release ([`8863fb3`](https://github.com/matteo4diani/poetry-packaging-demo/commit/8863fb300601139b0d42eaeb11d1f0ac171da160))
+
+
 ## v0.1.17 (2023-08-12)
 
 ### Fix
