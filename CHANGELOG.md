@@ -2,6 +2,13 @@
 
 
 
+## v1.2.5 (2023-08-13)
+
+### Fix
+
+* fix: revert again because I f&#39;ed up ([`a0b71ad`](https://github.com/matteo4diani/poetry-packaging-demo/commit/a0b71ad364931c2c6193cce539415e595acb622b))
+
+
 ## v1.2.4 (2023-08-13)
 
 ### Ci
