@@ -68,7 +68,7 @@ jobs:
         run: |
           pip install python-semantic-release
           result=""
-          if semantic-release --noop --strict version ; then
+          if [semantic-release --noop --strict version] then
             result="true"
           else
             result="false"
