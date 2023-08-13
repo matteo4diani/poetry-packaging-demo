@@ -2,6 +2,13 @@
 
 
 
+## v1.2.6 (2023-08-13)
+
+### Fix
+
+* fix: take tag in ci script from semantic-release outputs ([`c520157`](https://github.com/matteo4diani/poetry-packaging-demo/commit/c52015777c15f75bf3e78175525756a4ec24a5a8))
+
+
 ## v1.2.5 (2023-08-13)
 
 ### Fix
