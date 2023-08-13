@@ -2,6 +2,17 @@
 
 
 
+## v1.2.2 (2023-08-13)
+
+### Ci
+
+* ci: should not release ([`cc14e28`](https://github.com/matteo4diani/poetry-packaging-demo/commit/cc14e2896bd0dd18f501068546b413bee78cac89))
+
+### Fix
+
+* fix: fix broken CI ([`8352c33`](https://github.com/matteo4diani/poetry-packaging-demo/commit/8352c33afb1083a3e5a39f4d51ee9a3c2db78f35))
+
+
 ## v1.2.1 (2023-08-13)
 
 ### Ci
