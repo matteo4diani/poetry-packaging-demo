@@ -2,6 +2,13 @@
 
 
 
+## v1.3.0 (2023-08-13)
+
+### Feature
+
+* feat: add github-actions[bot] as user agent ([`a0f4e43`](https://github.com/matteo4diani/poetry-packaging-demo/commit/a0f4e43e83f6605fedbc17131b5796db9e6a6b69))
+
+
 ## v1.2.7 (2023-08-13)
 
 ### Fix
