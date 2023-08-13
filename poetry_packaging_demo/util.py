@@ -9,5 +9,4 @@ def log(message: str):
     print(message)
     
 def say_hello(name: str):
-    #print(f'Hello {name}!')
-    pass
+    print(f'Hello {name}!')
