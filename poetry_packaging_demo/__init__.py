@@ -1,1 +1,1 @@
-from .util import for_each
+from .util import for_each, log
