@@ -7,3 +7,6 @@ def for_each(list: ndarray, function: Callable[[any, int, ndarray], None]):
         
 def log(message: str):
     print(message)
+    
+def say_hello(name: str):
+    print(f'Hello {name}!')
