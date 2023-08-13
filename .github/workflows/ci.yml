@@ -74,9 +74,10 @@ jobs:
           fi
 
       - name: Context for steps
+        id: context-for-steps
         env:
           STEPS_CONTEXT: ${{ toJson(steps) }}
-        run: echo "$STEPS_CONTEXT"
+        run: echo "${{steps}}"
 
       - name: Context for output
         run: echo "$GITHUB_OUTPUT"
