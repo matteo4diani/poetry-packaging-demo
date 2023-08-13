@@ -72,6 +72,10 @@ jobs:
           else
             echo "Skipping release steps."
           fi
+      
+      - name: Append released variable
+        id: append
+        run: echo "my_variable=true" >> $GITHUB_OUTPUT
 
       - name: Context for steps
         env:
