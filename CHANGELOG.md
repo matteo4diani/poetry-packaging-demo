@@ -2,6 +2,17 @@
 
 
 
+## v1.2.0 (2023-08-13)
+
+### Feature
+
+* feat: Add some complicated feature (#3)
+
+* feat: Add some complicated feature
+
+* fix: Fix some complicated feature ([`f182e16`](https://github.com/matteo4diani/poetry-packaging-demo/commit/f182e1662164df195b78e04a41d6b011f6f25c13))
+
+
 ## v1.1.0 (2023-08-13)
 
 ### Ci
