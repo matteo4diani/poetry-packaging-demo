@@ -67,23 +67,11 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pip install python-semantic-release
-          if semantic-release --noop --strict version; then
-            echo 'result=true' >> $GITHUB_OUTPUT
-          else
-            echo 'result=false' >> $GITHUB_OUTPUT
-          fi
+          semantic-release --noop --strict version
 
-      - name: Context for steps
-        id: context-for-steps
-        env:
-          STEPS_CONTEXT: ${{ toJson(steps) }}
-        run: echo "${{steps}}"
-
-      - name: Context for output
-        run: echo "$GITHUB_OUTPUT"
-
-      - if: steps.release-status.outputs.result == 'true'
+      - if: steps.release-status.outputs.released == 'true'
         name: Release to GitHub
+        id: github-release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -91,8 +79,9 @@ jobs:
           git fetch --tags
           for file in ./dist/**; do gh release upload "$(git describe --abbrev=0)" $file; done
       
-      - if: steps.release-status.outputs.result == 'true'
+      - if: steps.release-status.outputs.released == 'true'
         name: Release to PyPI
+        id: pypi-release
         env:
           PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
         run: |
