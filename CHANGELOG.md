@@ -2,6 +2,17 @@
 
 
 
+## v1.2.4 (2023-08-13)
+
+### Ci
+
+* ci: refactor if ([`3b2fdd5`](https://github.com/matteo4diani/poetry-packaging-demo/commit/3b2fdd53e54cfc4baaeece5bd7210aaee9bc21dc))
+
+### Fix
+
+* fix: revert to if with semicolon (why does it malfunction?) ([`aa70960`](https://github.com/matteo4diani/poetry-packaging-demo/commit/aa70960b881e7c4341effc3635ae1acfb497c7c3))
+
+
 ## v1.2.3 (2023-08-13)
 
 ### Ci
