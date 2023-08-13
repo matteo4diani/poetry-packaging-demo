@@ -2,6 +2,21 @@
 
 
 
+## v1.1.0 (2023-08-13)
+
+### Ci
+
+* ci: Use &#39;semantic-version --noop --strict version&#39; to check release status ([`35e4450`](https://github.com/matteo4diani/poetry-packaging-demo/commit/35e4450413681dc6d415f54ac83ed916bd463bdb))
+
+### Feature
+
+* feat: add some feature
+
+feat: add some feature ([`52d259d`](https://github.com/matteo4diani/poetry-packaging-demo/commit/52d259d3a2c5eb6dcf295765488d84f36e47766c))
+
+* feat: add some feature ([`00b6d53`](https://github.com/matteo4diani/poetry-packaging-demo/commit/00b6d530fef53a229f2514e65b187e48e4c69ceb))
+
+
 ## v1.0.0 (2023-08-12)
 
 ### Breaking
