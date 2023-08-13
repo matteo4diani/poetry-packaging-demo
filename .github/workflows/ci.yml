@@ -72,7 +72,7 @@ jobs:
           else
             result="false"
           fi
-          echo "result=$result" >> $GITHUB_OUTPUT
+          echo "my_variable=$result" >> $GITHUB_OUTPUT
 
       - name: Context for steps
         env:
