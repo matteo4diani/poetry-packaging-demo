@@ -82,8 +82,10 @@ jobs:
         run: |
           semantic-release version
           git fetch --tags
-          for file in ./dist/**; do gh release upload "$(git describe --abbrev=0)" $file; done
-      
+          for file in ./dist/**
+            do gh release upload "${{steps.release-status.outputs.tag}}" $file
+          done
+
       - if: steps.release-status.outputs.released == 'true'
         name: Release to PyPI
         id: pypi-release
