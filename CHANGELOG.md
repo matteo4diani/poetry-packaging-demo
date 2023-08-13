@@ -2,6 +2,39 @@
 
 
 
+## v1.2.3 (2023-08-13)
+
+### Ci
+
+* ci: test variable ([`732c073`](https://github.com/matteo4diani/poetry-packaging-demo/commit/732c0733abe2ea8f77dea089f1b83a825523f5dc))
+
+* ci: test variable ([`3278dd2`](https://github.com/matteo4diani/poetry-packaging-demo/commit/3278dd2b7344371ba09276659c436c4a7f5450f0))
+
+* ci: test variable ([`42be33a`](https://github.com/matteo4diani/poetry-packaging-demo/commit/42be33af8be812a8a2056dd98af852de3f782eab))
+
+* ci: test variable ([`987f93b`](https://github.com/matteo4diani/poetry-packaging-demo/commit/987f93bb026f3a7c5906db346b695241902ae1cd))
+
+* ci: test variable ([`da20918`](https://github.com/matteo4diani/poetry-packaging-demo/commit/da20918fc64c4b42ffbb65450ad01321573a11c1))
+
+* ci: test variable ([`2192e9a`](https://github.com/matteo4diani/poetry-packaging-demo/commit/2192e9a298be1deec54bd3754594dc153065eb79))
+
+* ci: test variable ([`225367a`](https://github.com/matteo4diani/poetry-packaging-demo/commit/225367a31306c72a4edd37d02f21a7e5fcccc230))
+
+* ci: test variable ([`80e18fb`](https://github.com/matteo4diani/poetry-packaging-demo/commit/80e18fb7c59009d0e077a15d68844232e85681ac))
+
+* ci: test variable ([`9aa0aa4`](https://github.com/matteo4diani/poetry-packaging-demo/commit/9aa0aa4970e7946948135cf7dfea3b0a77f72bd4))
+
+* ci: test variable ([`687e8a1`](https://github.com/matteo4diani/poetry-packaging-demo/commit/687e8a13d9fb3c86367df80a6e9601335716489c))
+
+* ci: debug GITHUB_OUTPUT ([`c48db14`](https://github.com/matteo4diani/poetry-packaging-demo/commit/c48db14b956adf2e57fa4117df678493d5d434bc))
+
+* ci: should not release ([`ae844d3`](https://github.com/matteo4diani/poetry-packaging-demo/commit/ae844d35bbe92172c56d2724056c4f91bc380381))
+
+### Fix
+
+* fix: Remove development code ([`44279fd`](https://github.com/matteo4diani/poetry-packaging-demo/commit/44279fd1ba4efdef98c430524d858c20bb1e68ee))
+
+
 ## v1.2.2 (2023-08-13)
 
 ### Ci
