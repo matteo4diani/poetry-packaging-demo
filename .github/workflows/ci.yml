@@ -67,13 +67,11 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pip install python-semantic-release
-          result=""
-          if [semantic-release --noop --strict version] then
-            result="true"
+          if semantic-release --noop --strict version; then
+            echo "Skipping release steps."
           else
-            result="false"
+            echo "Releasing new version."
           fi
-          echo "result=$result" >> $GITHUB_OUTPUT
 
       - name: Context for steps
         env:
