@@ -65,9 +65,9 @@ jobs:
         run: |
           pip install python-semantic-release
           if semantic-release --noop --strict version ; then
-            echo "::set-output name=result::true"
+            echo "result=true" >> $GITHUB_OUTPUT
           else
-            echo "::set-output name=result::false"
+            echo "result=false" >> $GITHUB_OUTPUT
           fi
 
       - if: steps.release_status.outputs.result == 'true'
