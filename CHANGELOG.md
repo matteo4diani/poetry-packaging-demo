@@ -2,6 +2,41 @@
 
 
 
+## v1.2.1 (2023-08-13)
+
+### Ci
+
+* ci: GitHub Actions developers are on crack ([`badcaf4`](https://github.com/matteo4diani/poetry-packaging-demo/commit/badcaf4caffc5f59035bec9873648b92c6595555))
+
+* ci: GitHub Actions developers are on crack ([`f7552fc`](https://github.com/matteo4diani/poetry-packaging-demo/commit/f7552fc884ed465ff1f907f29311842dc83d84a9))
+
+* ci: GitHub Actions developers are on crack ([`5f5c848`](https://github.com/matteo4diani/poetry-packaging-demo/commit/5f5c8483ccec7bb47a90464c8c4e2c484cfc1c08))
+
+* ci: GitHub Actions developers are on crack ([`07fb168`](https://github.com/matteo4diani/poetry-packaging-demo/commit/07fb168bb278b251cf2e697aaec48eee4b191825))
+
+* ci: GitHub Actions developers are on crack ([`ef1e92b`](https://github.com/matteo4diani/poetry-packaging-demo/commit/ef1e92bd93a27ec662a6a9fc725d7ed77a7d3415))
+
+* ci: GitHub Actions developers are on crack ([`0f6845d`](https://github.com/matteo4diani/poetry-packaging-demo/commit/0f6845daaa2f2d3c28e2bf2c9db07dce0a098821))
+
+* ci: GitHub Actions developers are on crack ([`5455e93`](https://github.com/matteo4diani/poetry-packaging-demo/commit/5455e93cc1cc8cb842626659d88c0e985ca8e071))
+
+* ci: Add debug step ([`67aef62`](https://github.com/matteo4diani/poetry-packaging-demo/commit/67aef629aca5b6a463dcfaa2762675318ab1558a))
+
+* ci: Fix CI ([`f90a0bd`](https://github.com/matteo4diani/poetry-packaging-demo/commit/f90a0bd204fd2b6499b0512d062ddf5f5456ef7a))
+
+* ci: Print release status ([`cc823b7`](https://github.com/matteo4diani/poetry-packaging-demo/commit/cc823b7a4389e8d791300ff1b24c14a099ec629b))
+
+* ci: Fix CI ([`d5663f6`](https://github.com/matteo4diani/poetry-packaging-demo/commit/d5663f6e3eb7e21dd127250bb4cb4792dc907b4c))
+
+* ci: Fix deprecated workflow commands ([`70a0367`](https://github.com/matteo4diani/poetry-packaging-demo/commit/70a0367e39d750705798482345872984eb27bb85))
+
+* ci: fix ci (#5) ([`24a3313`](https://github.com/matteo4diani/poetry-packaging-demo/commit/24a331306a95a4cd7b670e3ac866f9efe3b31339))
+
+### Fix
+
+* fix: Replace deprecated ::setoutput command (#4) ([`edcbb43`](https://github.com/matteo4diani/poetry-packaging-demo/commit/edcbb43c66d595e12c5752906a18979b8df6af45))
+
+
 ## v1.2.0 (2023-08-13)
 
 ### Feature
