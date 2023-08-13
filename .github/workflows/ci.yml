@@ -75,7 +75,7 @@ jobs:
 
       - name: Context for steps
         env:
-          STEPS_CONTEXT: ${{ steps }}
+          STEPS_CONTEXT: ${{ fromJson(steps) }}
         run: echo "$STEPS_CONTEXT"
 
       - if: steps.release-status.outputs.result == 'true'
