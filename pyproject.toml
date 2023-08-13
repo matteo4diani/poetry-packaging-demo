@@ -19,6 +19,7 @@ branch = "main"
 upload_to_PyPI = false
 upload_to_release = true
 build_command = "pip install poetry && poetry build"
+commit_author = "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
 
 [tool.semantic_release.commit_parser_options]
 allowed_tags = [
