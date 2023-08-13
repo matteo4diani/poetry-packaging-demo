@@ -72,6 +72,9 @@ jobs:
             echo "result=false" >> $GITHUB_OUTPUT
           fi
 
+      - name: Print release status
+        run: echo "RELEASE STATUS IS ${{steps.release-status.outputs.result}}"
+
       - if: steps.release-status.outputs.result == 'true'
         name: Release to GitHub
         env:
