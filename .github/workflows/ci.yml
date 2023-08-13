@@ -62,6 +62,7 @@ jobs:
 
       - name: Check release status
         id: release-status
+        shell: bash
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -73,10 +74,12 @@ jobs:
           fi
 
       - name: Print release status
+        shell: bash
         run: echo "RELEASE STATUS IS ${{steps.release-status.outputs.result}}"
 
       - if: steps.release-status.outputs.result == 'true'
         name: Release to GitHub
+        shell: bash
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -86,6 +89,7 @@ jobs:
       
       - if: steps.release-status.outputs.result == 'true'
         name: Release to PyPI
+        shell: bash
         env:
           PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
         run: |
