@@ -2,6 +2,13 @@
 
 
 
+## v1.2.7 (2023-08-13)
+
+### Fix
+
+* fix: add gh actions bot as user agent for automated commits ([`30432f3`](https://github.com/matteo4diani/poetry-packaging-demo/commit/30432f3c86e5e4b5f4dc9ad890576b801214afa7))
+
+
 ## v1.2.6 (2023-08-13)
 
 ### Fix
