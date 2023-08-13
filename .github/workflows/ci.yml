@@ -68,14 +68,14 @@ jobs:
         run: |
           pip install python-semantic-release
           if semantic-release --noop --strict version; then
-            echo "DO_RELEASE=true" >> "$GITHUB_OUTPUT"
+            echo 'result=true' >> $GITHUB_OUTPUT
           else
-            echo "DO_RELEASE=false" >> "$GITHUB_OUTPUT"
+            echo 'result=false' >> $GITHUB_OUTPUT
           fi
 
       - name: Context for steps
         env:
-          STEPS_CONTEXT: ${{ toJson(steps) }}
+          STEPS_CONTEXT: ${{ steps }}
         run: echo "$STEPS_CONTEXT"
 
       - if: steps.release-status.outputs.result == 'true'
