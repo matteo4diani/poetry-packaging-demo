@@ -72,7 +72,7 @@ jobs:
             echo "result=false" >> $GITHUB_OUTPUT
           fi
 
-      - if: steps.release-status.outputs.result == true
+      - if: steps.release-status.outputs.result == 'true'
         name: Release to GitHub
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -81,7 +81,7 @@ jobs:
           git fetch --tags
           for file in ./dist/**; do gh release upload "$(git describe --abbrev=0)" $file; done
       
-      - if: steps.release-status.outputs.result == true
+      - if: steps.release-status.outputs.result == 'true'
         name: Release to PyPI
         env:
           PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
