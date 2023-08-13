@@ -73,11 +73,6 @@ jobs:
             echo "Releasing new version."
           fi
 
-      - name: Context for steps
-        env:
-          STEPS_CONTEXT: ${{ toJson(steps) }}
-        run: echo "$STEPS_CONTEXT"
-
       - if: steps.release-status.outputs.released == 'true'
         name: Release to GitHub
         id: github-release
