@@ -75,8 +75,11 @@ jobs:
 
       - name: Context for steps
         env:
-          STEPS_CONTEXT: ${{ fromJson(steps) }}
+          STEPS_CONTEXT: ${{ toJson(steps) }}
         run: echo "$STEPS_CONTEXT"
+
+      - name: Context for output
+        run: echo "$GITHUB_OUTPUT"
 
       - if: steps.release-status.outputs.result == 'true'
         name: Release to GitHub
