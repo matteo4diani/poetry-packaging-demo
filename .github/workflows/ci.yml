@@ -67,7 +67,11 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pip install python-semantic-release
-          semantic-release --noop --strict version
+          if semantic-release --noop --strict version ; then
+            echo "Releasing new version."
+          else
+            echo "Skipping release steps."
+          fi
 
       - if: steps.release-status.outputs.released == 'true'
         name: Release to GitHub
