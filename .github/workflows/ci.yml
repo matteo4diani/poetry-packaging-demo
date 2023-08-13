@@ -68,10 +68,11 @@ jobs:
         run: |
           pip install python-semantic-release
           if semantic-release --noop --strict version ; then
-            echo ",should_release=true" >> $GITHUB_OUTPUT
+            echo "result=true" >> $GITHUB_OUTPUT
           else
-            echo ",should_release=false" >> $GITHUB_OUTPUT
+            echo "result=false" >> $GITHUB_OUTPUT
           fi
+          echo "my_variable=true" >> $GITHUB_OUTPUT
 
       - name: Context for steps
         env:
