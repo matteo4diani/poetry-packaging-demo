@@ -87,14 +87,20 @@ jobs:
           done
 
       - if: steps.release-status.outputs.released == 'true'
-        name: Release to PyPI
-        id: pypi-release
+        name: Release to Test PyPI
+        id: test-pypi-release
         env:
-          PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
           TEST_PYPI_TOKEN: ${{ secrets.TEST_PYPI_TOKEN }}
         run: |
           poetry config repositories.test-pypi https://test.pypi.org/legacy/
           poetry config pypi-token.test-pypi $TEST_PYPI_TOKEN
           poetry publish -r test-pypi -u __token__
-#         poetry config pypi-token.pypi $PYPI_TOKEN
-#         poetry publish
+
+      - if: steps.release-status.outputs.released == 'true'
+        name: Release to PyPI
+        id: pypi-release
+        env:
+          PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+        run: |
+          poetry config pypi-token.pypi $PYPI_TOKEN
+          poetry publish
