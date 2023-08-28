@@ -2,6 +2,13 @@
 
 
 
+## v1.3.2 (2023-08-28)
+
+### Fix
+
+* fix(ci): trigger release ([`1414458`](https://github.com/matteo4diani/poetry-packaging-demo/commit/14144588a1f1c9f4937bedf638767d456bce234a))
+
+
 ## v1.3.1 (2023-08-28)
 
 ### Ci
