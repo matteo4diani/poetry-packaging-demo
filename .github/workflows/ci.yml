@@ -91,6 +91,10 @@ jobs:
         id: pypi-release
         env:
           PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+          TEST_PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
         run: |
-          poetry config pypi-token.pypi $PYPI_TOKEN
-          poetry publish
+          poetry config repositories.test-pypi https://test.pypi.org/legacy/
+          poetry config pypi-token.test-pypi $TEST_PYPI_TOKEN
+          poetry publish -r test-pypi
+#         poetry config pypi-token.pypi $PYPI_TOKEN
+#         poetry publish
