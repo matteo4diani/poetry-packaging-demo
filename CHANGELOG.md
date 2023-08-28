@@ -2,6 +2,13 @@
 
 
 
+## v1.3.4 (2023-08-28)
+
+### Fix
+
+* fix(ci): trigger release on pypi and test.pypi ([`bab8794`](https://github.com/matteo4diani/poetry-packaging-demo/commit/bab8794b69f9ecca48a04b646c3deb3e6a1a31aa))
+
+
 ## v1.3.3 (2023-08-28)
 
 ### Fix
